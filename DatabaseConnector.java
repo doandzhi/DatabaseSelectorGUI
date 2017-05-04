@@ -14,14 +14,14 @@ public class DatabaseConnector {
 			Statement myStmt = myConn.createStatement();
 		
 			ResultSet myRs;
-			// String s is a query I declared in advanceF 
+			// String s is a query I declared in advance 
 			myRs = myStmt.executeQuery(s);
 			while (myRs.next()) {
 				try {
 					System.out.println(
 							 myRs.getString("name") + "  "+ myRs.getInt(2));
 				} catch (SQLException e) {
-					// TODO Auto-generated catch block
+					
 					e.printStackTrace();
 				}
 			}
