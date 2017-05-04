@@ -10,7 +10,7 @@ public class DatabaseConnector {
 		Connection myConn;
 		
 			myConn = DriverManager.getConnection("jdbc:mysql://localhost:3306/public_laundry1?autoReconnect=true&useSSL=false", "root",
-					"alonso");
+					"pass132");
 			Statement myStmt = myConn.createStatement();
 		
 			ResultSet myRs;
