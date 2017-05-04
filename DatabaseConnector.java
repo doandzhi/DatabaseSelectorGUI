@@ -18,10 +18,8 @@ public class DatabaseConnector {
 			myRs = myStmt.executeQuery(s);
 			while (myRs.next()) {
 				try {
-					System.out.println(
-							 myRs.getString("name") + "  "+ myRs.getInt(2));
-				} catch (SQLException e) {
-					
+					System.out.println(myRs.getString("name") + "  "+ myRs.getInt(2));
+				} catch (SQLException e) {					
 					e.printStackTrace();
 				}
 			}
