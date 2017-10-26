@@ -5,14 +5,14 @@ import javax.swing.JTextArea;
 
 public class TextAreaOutputStream extends OutputStream {
 
-	 private JTextArea textControl;
+	private JTextArea textControl;
 	 
-	 public TextAreaOutputStream( JTextArea control ) {
+	public TextAreaOutputStream( JTextArea control ) {
 	        textControl = control;
-	    }
+	}
 	 
-	 public void write( int b ) throws IOException {
+	public void write( int b ) throws IOException {
 	        // append the data as characters to the JTextArea control
 	        textControl.append( String.valueOf( ( char )b ) );
-	    }  
+	}  
 }
